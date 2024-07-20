@@ -1,4 +1,5 @@
-<script>
+// quiz.js
+
 function checkAnswer() {
     // Identify the correct answer
     const correctAnswer = "4";
@@ -14,4 +15,6 @@ function checkAnswer() {
         feedback.textContent = "That's incorrect. Try again!";
     }
 }
-</script>
+
+// Add event listener to the Submit Answer button
+document.getElementById('submit-answer').addEventListener('click', checkAnswer);
